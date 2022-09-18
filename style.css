@@ -1,0 +1,101 @@
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    font-size: 100%;
+    /* background-color: hsla(68, 17%, 41.8%, 0.4); */
+    background-color: #fff;
+}
+
+/* company name / logo */
+.head{
+    font-size: 18px;
+    /* font-family: Arial, Helvetica, sans-serif; */
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    padding: 10px;
+    margin-left: 50px;
+    color: rgb(67, 4, 19);
+}
+
+/* top nav bar */
+.nav{
+    background-color: #155f42;
+    text-align: center;
+    position: relative;
+    font-size: 1em;
+}
+
+.nav ul{
+    list-style-type: none;
+}
+
+.nav ul li{
+    display: inline-flex;
+}
+
+.nav ul li a{
+    text-decoration: none;
+    display: block;
+    color: #ffeeff;
+    padding: 20px 26px;
+}
+
+.nav ul li a:hover, .dropdown:hover{
+    color: #ffeeff;
+    background-color: rgb(20, 24, 16);
+}
+
+/* sub menu items */
+.sub_container{
+    background-color: rgb(129, 106, 129);
+    position: absolute;
+    top: 58px;
+    text-align: left;
+    min-width: 160px;
+    box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.4);
+    z-index: 1;
+}
+
+.sub_container ul{
+   list-style-type: none;
+   display: none;
+}
+
+.dropdown:hover .sub_container ul{
+    display: block;
+}
+
+.sub_container ul li{
+   display: block;
+   position: relative;
+}  
+
+.sub_container ul li a{
+    color: #cea;
+    /* color: #cecece; */
+}
+
+.sub_container ul li a:hover, .dropdown1:hover{
+    color: #ffeeff;
+    background-color: rgb(20, 24, 16);
+}
+
+/* second sub menu */
+.sub_menu{
+    position: absolute;
+    background-color: rgb(129, 106, 129);
+    z-index: 1;
+    min-width: 160px;
+    top: 0px;
+    left: 100%; 
+    display: none;
+}
+
+.dropdown1:hover .sub_menu{
+    display: block;
+}
+
